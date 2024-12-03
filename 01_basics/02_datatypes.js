@@ -8,14 +8,15 @@ let isPass = true   // boolean
 
 
 // Data types    sortcut --> NN SS BB U
-// primitive .....
-// number => 2 to power 53
-// bigint => for big values
+// Primitive .....
+// Number => 2 to power 53
+// BigInt => for big values
 // String => "hello"
 // Boolean => true/false
-// null  => standalone value
-// undefined
+// Null  => standalone value (it does't mean 0, it means empty)
+// Undefined
 
-// non primitive
+// Non Primitive....
+// array
 // object
 
