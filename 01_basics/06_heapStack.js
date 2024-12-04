@@ -1,14 +1,32 @@
 // Stack and Heap..........
 
 
-// Stack => Primitive, Copy , Change in copy 
-// Heap => Non Primitive , Reference , change in Original value
+// Stack => Use in Primitive DT, Passes a Copy of a variable , Change in copy , multipes indexes/blocks
+// Heap => Non Primitive , Reference , change in Original value , single block
 
-let names = "patni"
+// ************STACK***************
+
+let name_first= "patni"
 let anotherName = names
+    anotherName = "singh"
 
-console.log(anotherName)
-/workspaces/chai-and-code-js/01_basics/06_heapStack.js
+// console.log(anotherName)    if we change in (anotherName) , (name_first) will not change....
+// console.log(name_first)      NOte :  Here the 2nd variable is just a copy of 1st variable , so ofcourse original(1st) will not change only copied will change
+
+
+// ***********HEAP**********
+let user1 = {
+    email: "patni@gmail.com",
+    name : "sonu",
+    upi : "oksbi"
+
+}
+
+let user2 = user1
+
+user2.email = "bhupesh"
+console.log(user1)               //if we change in user 2 it will reflect in user 1 ,beacuse the it consider reference...
+console.log(user2.email)
 
 
 
